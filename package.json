@@ -2,7 +2,8 @@
   "name": "create-ts-library",
   "version": "1.0.0",
   "description": "my awesome library",
-  "main": "./bundles/myLib.min.js",
+  "main": "./dist/myLib.min.js",
+  "types": "./dist/typings/index.d.ts",
   "scripts": {
     "dev": "npm run tslint && webpack --mode development",
     "dev:tsc": "tsc && tsc -m es6 --outDir ./dist/lib-esm",
