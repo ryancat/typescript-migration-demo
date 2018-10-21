@@ -1,4 +1,4 @@
-const ModuleB = function (config) {
+var ModuleB = function (config) {
   this.config = config;
 };
 

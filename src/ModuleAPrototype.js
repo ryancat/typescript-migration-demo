@@ -1,3 +1,5 @@
+var ModuleC = require('./ModuleC');
+
 module.exports = {
   initModuleA: function (config) {
     this.config = config;
@@ -8,6 +10,7 @@ module.exports = {
   },
 
   run: function () {
-    return 'ModuleA';
+    var moduleC = new ModuleC(this.config);
+    return 'ModuleA' + '-' + moduleC.run();
   }
 };

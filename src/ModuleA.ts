@@ -1,5 +1,4 @@
 import { IModuleAConfig } from './types';
-import * as ModuleC from './ModuleC.js';
 import * as ModuleAPrototype from './ModuleAPrototype.js';
 
 class ModuleA {
@@ -14,4 +13,6 @@ class ModuleA {
 
 Object.assign(ModuleA.prototype, ModuleAPrototype);
 
+// Use export = ModuleA so that the CommonJS require function
+// still works as before.
 export = ModuleA;

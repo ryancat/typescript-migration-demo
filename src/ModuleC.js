@@ -1,10 +1,10 @@
-const ModuleC = function (config) {
+var ModuleC = function (config) {
   this.config = config;
 };
 
 ModuleC.prototype = {
-  log: function (message) {
-    console.log('[ModuleC]:', message);
+  run: function () {
+    return 'ModuleC';
   }
 };
 
