@@ -1,5 +1,5 @@
 import 'jest';
-import myLib from '../dist/myLib';
+import myLib from 'myLib';
 
 test('moduleA from myLib should run', () => {
   expect(myLib.hasOwnProperty('ModuleA')).toBeTruthy();

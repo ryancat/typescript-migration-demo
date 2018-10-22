@@ -6,7 +6,13 @@
   "author": "Ryan Chen",
   "license": "MIT",
   "scripts": {
-    "test": "jest"    
+    "add-self:js": "touch node_modules/myLib.js && echo \"module.exports = require('../..');\" > node_modules/myLib.js",
+    "add-self:ts": "touch node_modules/myLib.d.ts && echo \"import myLib from '../../';export = myLib;\" > node_modules/myLib.d.ts",
+    "remove-self:js": "rm node_modules/myLib.js",
+    "remove-self:ts": "rm node_modules/myLib.d.ts",
+    "add-self": "yarn run add-self:js && yarn run add-self:ts",
+    "remove-self": "yarn run remove-self:js && yarn run remove-self:ts",
+    "test": "yarn run add-self && jest && yarn run remove-self"
   },
   "devDependencies": {
     "@types/jest": "^23.3.5",
