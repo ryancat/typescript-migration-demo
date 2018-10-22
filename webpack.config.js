@@ -8,7 +8,7 @@ module.exports = function (env, argv) {
     mode: mode,
 
     entry: {
-      'myLib': './src/index.ts'
+      'myLib': './src/myLib.ts'
     },
   
     output: {

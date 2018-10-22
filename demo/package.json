@@ -1,0 +1,16 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Demo test as myLib consumer",
+  "main": "demo.ts",
+  "author": "Ryan Chen",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"    
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.5",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4"
+  }
+}
