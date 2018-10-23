@@ -12,7 +12,8 @@
     "remove-self:ts": "rm node_modules/myLib.d.ts",
     "add-self": "yarn run add-self:js && yarn run add-self:ts",
     "remove-self": "yarn run remove-self:js && yarn run remove-self:ts",
-    "test": "yarn run add-self && jest && yarn run remove-self"
+    "test": "jest",
+    "postinstall": "yarn run add-self"
   },
   "devDependencies": {
     "@types/jest": "^23.3.5",
